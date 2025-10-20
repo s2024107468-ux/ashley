@@ -9,9 +9,9 @@ project-root/
 ├── script.ts           # JavaScript functionality
 ├── static/
 │   ├── images/         # Image folder (organized by section)
-    │   └── team/           # Team member photos
-    │   └── team/           # Team member photos
-    ├── videos/          # How-to video
+│   │   └── team/           # Team member photos
+│   │   └── team/           # Team member photos
+│   ├── videos/          # How-to video
 └── README.md           # This file
 ```
 
@@ -111,7 +111,7 @@ In the "How It's Made" section, find the video player and update:
 ```html
 <source src="./pandan-craft-tutorial.mp4" type="video/mp4">
 ```
-Replace `./pandan-craft-tutorial.mp4` with your video file path.
+Replace `./static/videos/pandan-craft-tutorial.mp4` with your video file path.
 
 ### Change Colors
 Edit the CSS variables at the top of `styles.css`:
