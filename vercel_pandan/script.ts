@@ -5,8 +5,16 @@ const navMenu = document.querySelector(".nav-menu")
 if (mobileMenuBtn) {
   mobileMenuBtn.addEventListener("click", () => {
     navMenu?.classList.toggle("active")
+    mobileMenuBtn.classList.toggle("active")
   })
 }
+
+document.querySelectorAll(".nav-link").forEach((link) => {
+  link.addEventListener("click", () => {
+    navMenu?.classList.remove("active")
+    mobileMenuBtn?.classList.remove("active")
+  })
+})
 
 // Smooth Scroll for Anchor Links
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
@@ -40,5 +48,3 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll("section").forEach((section) => {
   observer.observe(section)
 })
-
-console.log("[v0] Pandan Crafts website loaded successfully")

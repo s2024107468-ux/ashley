@@ -21,7 +21,6 @@
                     <a href="#video" class="nav-link">How-To</a>
                     <a href="#gallery" class="nav-link">Gallery</a>
                     <a href="#team" class="nav-link">Team</a>
-                    <button class="btn btn-primary">Learn More</button>
                 </div>
 
                 <button class="mobile-menu-btn" id="mobileMenuBtn">
@@ -48,7 +47,7 @@
                 </div>
             </div>
             <div class="hero-image">
-                <img src="./public/traditional-pandan-woven-handbag-craft.jpg" alt="Pandan Craft Handbag">
+                <img src="./public/hero-image.jpg" alt="Pandan Craft Handbag">
             </div>
         </div>
     </section>
@@ -63,7 +62,7 @@
 
             <div class="about-grid">
                 <div class="about-image">
-                    <img src="./public/pandan-leaves-weaving-process.jpg" alt="Pandan Weaving Process">
+                    <img src="./public/about-image.jpg" alt="Pandan Weaving Process">
                 </div>
                 <div class="about-content">
                     <h3 class="about-title">The Art of Pandan Weaving</h3>
@@ -120,14 +119,10 @@
             </div>
 
             <div class="video-grid">
-                <div class="video-player">
-                    <div class="video-placeholder">
-                        <div class="play-button">▶</div>
-                        <p>Video Player</p>
-                        <p class="video-duration">3-5 minute procedural video</p>
-                    </div>
-                </div>
-
+                    <video width="100%" height="auto" controls style="border-radius: 8px; background: #000;">
+                        <source src="./static/videos/pandan-craft-tutorial.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
                 <div class="steps-container">
                     <h3 class="steps-title">The Weaving Process</h3>
                     <div class="steps-list">
@@ -202,22 +197,22 @@
 
             <div class="gallery-grid">
                 <div class="gallery-item">
-                    <img src="./public/pandan-handbag-front.jpg" alt="Pandan handbag front view">
+                    <img src="./static/images/gallery/pandan-craft-front.jpg" alt="Pandan handbag front view">
                 </div>
                 <div class="gallery-item">
-                    <img src="./public/pandan-handbag-side.jpg" alt="Pandan handbag side view">
+                    <img src="./static/images/gallery/pandan-craft-side.jpg" alt="Pandan handbag side view">
                 </div>
                 <div class="gallery-item">
-                    <img src="./public/pandan-weaving-detail.jpg" alt="Pandan weaving texture close up">
+                    <img src="./static/images/gallery/pandan-craft-detail.jpg" alt="Pandan weaving texture close up">
                 </div>
                 <div class="gallery-item">
-                    <img src="./public/pandan-handbag-styled.jpg" alt="Pandan handbag styled with items">
+                    <img src="./static/images/gallery/pandan-craft-styled.jpg" alt="Pandan handbag styled with items">
                 </div>
                 <div class="gallery-item">
-                    <img src="./public/pandan-outdoor.jpg" alt="Pandan handbag outdoor natural light">
+                    <img src="./static/images/gallery/pandan-craft-outdoor.jpg" alt="Pandan handbag outdoor natural light">
                 </div>
                 <div class="gallery-item">
-                    <img src="./public/pandan-collection.jpg" alt="Collection of pandan woven crafts">
+                    <img src="./static/images/gallery/pandan-craft-collection.jpg" alt="Collection of pandan woven crafts">
                 </div>
             </div>
         </div>
@@ -233,27 +228,37 @@
 
             <div class="team-grid">
                 <div class="team-member">
-                    <div class="member-avatar">👤</div>
+                    <div class="member-avatar">
+                        <img src="./static/images/team/team-member-01.jpg" alt="Maria Santos">
+                    </div>
                     <h3 class="member-name">Maria Santos</h3>
                     <p class="member-role">Project Lead & Weaver</p>
                 </div>
                 <div class="team-member">
-                    <div class="member-avatar">👤</div>
+                    <div class="member-avatar">
+                        <img src="./static/images/team/team-member-02.jpg" alt="Juan Dela Cruz">
+                    </div>
                     <h3 class="member-name">Juan Dela Cruz</h3>
                     <p class="member-role">Cultural Historian</p>
                 </div>
                 <div class="team-member">
-                    <div class="member-avatar">👤</div>
+                    <div class="member-avatar">
+                        <img src="./static/images/team/team-member-03.jpg" alt="Rosa Reyes">
+                    </div>
                     <h3 class="member-name">Rosa Reyes</h3>
                     <p class="member-role">Master Artisan</p>
                 </div>
                 <div class="team-member">
-                    <div class="member-avatar">👤</div>
+                    <div class="member-avatar">
+                        <img src="./static/images/team/team-member-04.jpg" alt="Carlos Mendoza">
+                    </div>
                     <h3 class="member-name">Carlos Mendoza</h3>
                     <p class="member-role">Sustainability Coordinator</p>
                 </div>
                 <div class="team-member">
-                    <div class="member-avatar">👤</div>
+                    <div class="member-avatar">
+                        <img src="./static/images/team/team-member-05.jpg" alt="Ana Flores">
+                    </div>
                     <h3 class="member-name">Ana Flores</h3>
                     <p class="member-role">Digital Marketing & Outreach</p>
                 </div>
@@ -292,7 +297,7 @@
 
             <div class="footer-bottom">
                 <p class="footer-copyright">&copy; 2025 Pandan Crafts. Celebrating Philippine Heritage.</p>
-                <a href="#" class="footer-credits">Credits</a>
+                <!-- <a href="#team" class="footer-credits">Credits</a> -->
             </div>
         </div>
     </footer>

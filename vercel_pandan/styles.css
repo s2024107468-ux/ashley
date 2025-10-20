@@ -104,6 +104,22 @@ body {
   }
 }
 
+/* Add mobile menu active state to show menu on small screens */
+@media (max-width: 767px) {
+  .nav-menu.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--cream);
+    padding: 1rem;
+    gap: 1rem;
+    border-bottom: 1px solid var(--border-light);
+  }
+}
+
 .nav-link {
   color: var(--charcoal);
   text-decoration: none;
@@ -137,6 +153,19 @@ body {
   background-color: var(--charcoal);
   border-radius: 0.125rem;
   transition: all 0.3s ease;
+}
+
+/* Add hamburger animation when menu is active */
+.mobile-menu-btn.active span:nth-child(1) {
+  transform: rotate(45deg) translate(0.5rem, 0.5rem);
+}
+
+.mobile-menu-btn.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.mobile-menu-btn.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(0.5rem, -0.5rem);
 }
 
 /* Buttons */
@@ -619,6 +648,13 @@ body {
   justify-content: center;
   margin: 0 auto 1rem;
   font-size: 2rem;
+  overflow: hidden;
+}
+
+.member-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .member-name {
