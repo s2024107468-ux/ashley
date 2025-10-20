@@ -108,14 +108,14 @@ All team images follow the pattern: `team-member-{number}.jpg`
 
 ### Add a Video
 In the "How It's Made" section, find the video player and update:
-\`\`\`html
+```html
 <source src="./pandan-craft-tutorial.mp4" type="video/mp4">
-\`\`\`
+```
 Replace `./pandan-craft-tutorial.mp4` with your video file path.
 
 ### Change Colors
 Edit the CSS variables at the top of `styles.css`:
-\`\`\`css
+```css
 :root {
   --pandan-dark: #1a4d2e;      /* Dark green */
   --pandan-green: #2d6a4f;     /* Medium green */
@@ -124,8 +124,7 @@ Edit the CSS variables at the top of `styles.css`:
   --natural-tan: #c9b8a8;      /* Accent */
   --charcoal: #2c2c2c;         /* Text */
 }
-\`\`\`
-
+```
 ## File Sizes & Optimization
 
 - **Gallery images:** Recommended 1200x800px, max 500KB each
