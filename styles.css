@@ -96,7 +96,39 @@ body {
   display: none;
   align-items: center;
   gap: 2rem;
+  overflow: hidden;
 }
+
+.nav-menu a {
+  position: relative;
+  padding-bottom: 2px;
+}
+
+.nav-menu a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--pandan-green);
+  transition: width 0.3s ease;
+}
+
+.nav-menu a:hover::after,
+.nav-menu a:focus::after,
+.nav-menu a:active::after {
+  width: 100%;
+}
+
+.nav-menu a.active {
+  color: var(--pandan-green);
+}
+
+.nav-menu a.active::after {
+  width: 100%;
+}
+
 
 @media (min-width: 768px) {
   .nav-menu {
